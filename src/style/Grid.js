@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Grid = styled.div`
   width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -10,7 +11,7 @@ const Grid = styled.div`
   &:before {
     content: "";
     display: block;
-    height: 100%;
+    height: 200%;
     width: 2px;
     position: absolute;
     left: 50%;
@@ -20,7 +21,7 @@ const Grid = styled.div`
     content: "";
     display: block;
     height: 2px;
-    width: 100%;
+    width: 200%;
     position: absolute;
     top: 50%;
     background-color: #333;

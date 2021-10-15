@@ -4,35 +4,37 @@ import { Wrap } from './GlobalStyle.js'
 const whiteBreath = keyframes`
   from {
     box-shadow: 
-      0px 0px 15px 5px rgba(255,255,255,0.2),
-      0px 0px 20px 5px rgba(255,255,255,0.2),
-      0px 0px 25px 5px rgba(255,255,255,0.2);
+      0px 0px 15px 1px rgba(255,255,255,0.2),
+      0px 0px 20px 1px rgba(255,255,255,0.2),
+      0px 0px 25px 1px rgba(255,255,255,0.2);
   }
   to {
     box-shadow: 
-      0px 0px 25px 10px rgba(255,255,255,0.3),
-      0px 0px 30px 10px rgba(255,255,255,0.3),
-      0px 0px 35px 10px rgba(255,255,255,0.3);
+      0px 0px 20px 10px rgba(255,255,255,0.5),
+      0px 0px 30px 10px rgba(255,255,255,0.5),
+      0px 0px 40px 10px rgba(255,255,255,0.5);
   }
 `
 const blackBreath = keyframes`
   from {
     box-shadow: 
-      0px 0px 15px 5px rgba(0,0,0,0.2),
-      0px 0px 20px 5px rgba(0,0,0,0.2),
-      0px 0px 25px 5px rgba(0,0,0,0.2);
+      0px 0px 15px 1px rgba(0,0,0,0.2),
+      0px 0px 20px 1px rgba(0,0,0,0.2),
+      0px 0px 25px 1px rgba(0,0,0,0.2);
   }
   to {
     box-shadow: 
-      0px 0px 25px 10px rgba(0,0,0,0.3),
-      0px 0px 30px 10px rgba(0,0,0,0.3),
-      0px 0px 35px 10px rgba(0,0,0,0.3);
+      0px 0px 20px 10px rgba(0,0,0,0.4),
+      0px 0px 30px 10px rgba(0,0,0,0.4),
+      0px 0px 40px 10px rgba(0,0,0,0.4);
   }
 `
 
 const WrapBoard = styled(Wrap)`
   width: 600px;
+  min-height: 600px;
   height: 600px;
+  min-height: 600px;
   background-color: #b96;
   flex-shrink: 0;
   display: grid;

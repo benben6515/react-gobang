@@ -26,7 +26,6 @@ const Button = styled.button`
   font-size: 1.2em;
   background-color: ${(props) => props.backgroundColor};
   border: 1px solid #999;
-
   &:hover {
     filter: brightness(0.9);
   }
@@ -36,10 +35,19 @@ const Button = styled.button`
 `
 
 const Wrap = styled.div`
+  display: grid;
+  align-items: center;
   width: clamp(30rem, 70%, 70rem);
-  margin: 2rem auto;
+  min-height: calc(100vh - 1.6rem);
+  margin: auto;
+`
+
+const WrapGame = styled.div`
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 `
 
 export default GlobalStyle
-export { Button, Wrap }
+export { Button, Wrap, WrapGame }
 

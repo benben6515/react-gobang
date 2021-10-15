@@ -1,13 +1,17 @@
-import { Wrap, Button } from '../style/GlobalStyle.js'
+import { Button } from '../style/GlobalStyle.js'
 import styled from 'styled-components'
 
-const WrapInfos = styled(Wrap)`
+const WrapInfos = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .8rem;
   border: 1px solid #000;
   border-radius : .3rem;
   background: #666;
   width: 300px;
   height: 600px;
-  margin-left: 3rem;
+  min-height: 600px;
   flex-shrink: 0;
   padding: 1rem;
   overflow-y: scroll;
@@ -33,6 +37,7 @@ const WinnerTxt = styled.div`
 
 const InfoButtons = styled.div`
   display: flex;
+  width: 100%;
   flex-flow: column wrap;
   /* overflow: scroll; */
 `
